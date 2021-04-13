@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.album.AlbumController">
+    <center>
+        <TableView fx:id="albumTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn prefWidth="${albumTable.width}" text="Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name"/>  <!-- maps to name field in Album class -->
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+            <BorderPane.margin>
+                <Insets right="10.0"/>
+            </BorderPane.margin>
+        </TableView>
+    </center>
+
+    <right>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.00" spacing="20.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="backToArtistBtn" maxWidth="Infinity" mnemonicParsing="false" text="Back"/>
+            </children>
+            <BorderPane.margin>
+                <Insets right="10.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </right>
+
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="100.00" prefWidth="200.00" BorderPane.alignment="CENTER">
+            <children>
+                <ProgressBar fx:id="progressBar" visible="false" prefWidth="200.00" progress="0.0">
+                    <HBox.margin>
+                        <Insets left="50.0"/>
+                    </HBox.margin>
+                </ProgressBar>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

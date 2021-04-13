@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.artist.UpdateArtistController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <GridPane>
+        <Label fx:id="artistNameLabel" text="Artist Name: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="artistNameTextField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <ButtonBar GridPane.rowIndex="1" GridPane.columnIndex="0">
+            <buttons>
+                <Button fx:id="okBtn" text="OK" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <Button fx:id="cancelBtn" text="Cancel" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            </buttons>
+        </ButtonBar>
+
+
+    </GridPane>
+
+</AnchorPane>
