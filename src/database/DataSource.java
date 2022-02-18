@@ -15,7 +15,7 @@ public class DataSource {
      * Database location info
      */
     public static final String  DB_NAME = "music.db";
-    public static final String  CONNECTION_STRING = "jdbc:sqlite:C:\\Users\\stratysilver\\Desktop\\" + DB_NAME;
+    public static final String  CONNECTION_STRING = "jdbc:sqlite:C:\\Users\\xxxxxxxxx\\Desktop\\" + DB_NAME;
 
     private Connection connection;
 
